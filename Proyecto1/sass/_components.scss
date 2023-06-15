@@ -1,0 +1,124 @@
+@mixin btn-base {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+@mixin btn-sm-modify {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+//Colores
+$color-main: #5086c1;
+$color-secondary: #7d9ab8;
+$color-blanco: #ffff;
+$color-negro: #000000;
+$color-terciary: #f4f8fe;
+
+.btn-main {
+  @include btn-base();
+  background-color: $color-main;
+  color: $color-blanco;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-blanco;
+  }
+  &-s {
+    @extend .btn-main;
+    @include btn-sm-modify();
+  }
+}
+
+.btn-sec {
+  @include btn-base();
+  color: $color-negro;
+  background-color: transparent;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-main;
+  }
+
+  &-s {
+    @extend .btn-sec;
+    @include btn-sm-modify();
+  }
+}
+
+.main-menu {
+  margin-bottom: 0;
+
+  li {
+    font-size: 1rem;
+    list-style: none;
+    display: inline;
+    padding: 0.3rem;
+
+    a {
+      color: $color-negro;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-main;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.icon-sm {
+  i {
+    font-size: 1.2rem;
+    color: $color-main;
+    padding: 0.4rem 0.6rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+  }
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .icon {
+    color: $color-main;
+    font-size: 3rem;
+  }
+
+  .description {
+    .title {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .text {
+      color: #696767;
+      font-weight: 600;
+    }
+  }
+  .cta {
+    margin-top: 1rem;
+    color: $color-main;
+    font-weight: 600;
+  }
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  i {
+    padding: 0;
+    color: $color-main;
+    font-size: 7rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,286 @@
+.btn-main, .btn-main-s {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #5086c1;
+  color: white;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: #7d9ab8;
+  color: white;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: #000000;
+  background-color: transparent;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  text-decoration: none;
+  color: #5086c1;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 1rem;
+  list-style: none;
+  display: inline;
+  padding: 0.3rem;
+}
+.main-menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  color: #5086c1;
+  text-decoration: none;
+}
+
+.icon-sm i {
+  font-size: 1.2rem;
+  color: #5086c1;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.benefit .icon {
+  color: #5086c1;
+  font-size: 3rem;
+}
+.benefit .description .title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.benefit .description .text {
+  color: #696767;
+  font-weight: 600;
+}
+.benefit .cta {
+  margin-top: 1rem;
+  color: #5086c1;
+  font-weight: 600;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.icon-desc i {
+  padding: 0;
+  color: #5086c1;
+  font-size: 7rem;
+}
+.icon-desc .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+  background-color: #f4f8fe;
+}
+
+.logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #5086c1;
+}
+.sec-home .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .home-description {
+  width: 20rem;
+  color: #7d9ab8;
+}
+.sec-home .lead-magnet .input-col {
+  max-width: 15rem;
+}
+
+.sec-features {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .intro h3 {
+  font-size: 2rem;
+}
+.sec-features .intro p {
+  color: #7d9ab8;
+}
+.sec-features .features {
+  display: flex;
+  align-items: center;
+}
+.sec-features .features .text {
+  padding: 2rem 0;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feature .description {
+  text-align: left;
+  margin-left: 1rem;
+  max-width: 60%;
+}
+.sec-features .features .text .feature .description .description-title {
+  font-size: 1.2rem;
+}
+.sec-features .features .text .feature .description .description-text {
+  color: #7d9ab8;
+  font-size: 0.9rem;
+}
+.sec-features .features .image img {
+  max-width: 25rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #eee;
+}
+.sec-benefits .intro {
+  text-align: center;
+  margin-top: 3rem;
+}
+.sec-benefits .intro h3 {
+  font-size: 2rem;
+}
+.sec-benefits .intro p {
+  color: #7d9ab8;
+}
+.sec-benefits .benefit-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+  color: #5086c1;
+}
+
+.sec-kpis {
+  background-color: #5086c1;
+  color: white;
+  padding: 2.7rem;
+  width: 100%;
+  margin: 0;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .number {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.sec-kpis .desc {
+  font-size: 0.9rem;
+}
+
+.sec-onboarding .intro {
+  text-align: center;
+  margin: 3rem;
+}
+.sec-onboarding .intro h3 {
+  font-size: 2rem;
+}
+.sec-onboarding .intro p {
+  color: #7d9ab8;
+}
+.sec-onboarding .steps {
+  display: flex;
+  max-width: 992px;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+}
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 40%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 1.5rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+  color: #7d9ab8;
+}
+
+@media (max-width: 768px) {
+  .sec-features .features .text .feature .description {
+    max-width: 100%;
+  }
+  .sec-onboarding .intro {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-footer-cta {
+    background-image: none;
+    padding: 3rem;
+  }
+  .sec-footer-cta .footer-cta {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
